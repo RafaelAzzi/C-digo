@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+    
+    while(numero == 0) {
+        printf("informe um numero mais que zero: ");
+        scanf("%d", &numero);
+        
+    }
+    
+    if(numero > 0) {
+        for(int i = numero; i >= 0; i--){
+            printf("contagem %d \n", i);
+        }
+       }else{
+            for(int i = numero; i <= 0; i++) 
+                printf("contagem %d \n", i);
+            }
+    
+        
+    
+            return 0;
+}
