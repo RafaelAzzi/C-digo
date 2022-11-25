@@ -1,0 +1,27 @@
+package uscs;
+public class Professor {
+int cod_prof;
+String nome_prof;
+String email_prof;
+String fone_prof;
+public Professor() {
+cod_prof = 0;
+nome_prof = null;
+email_prof = null;
+fone_prof = null;
+}
+public Professor(int c, String n, String e, String f) {
+cod_prof = c;
+nome_prof = n;
+email_prof = e;
+fone_prof = f;
+}
+public void Imprime_Professor() {
+System.out.println("---- Funcao Imprime_Professor() -----");
+System.out.println("Codido do Professor: " + cod_prof);
+System.out.println("Nome do Professor: " + nome_prof);
+System.out.println("Email do Professor: " + email_prof);
+System.out.println("Fone do Professor: " + fone_prof);
+System.out.println("-------------------------------------\n");
+}
+}
