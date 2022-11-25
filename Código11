@@ -1,0 +1,30 @@
+package uscs;
+public class Teste_Escola {
+public static void main(String[] args) {
+Curso[] tab_curso = new Curso[5];
+tab_curso[0] = new Curso(1, "Ciência da Computação",8);
+tab_curso[1] = new Curso(2, "Sistemas de Informação",8);
+tab_curso[2] = new Curso(3, "Redes de Computadores", 5);
+tab_curso[3] = new Curso(4, "Sistemas para Internet", 5);
+tab_curso[4] = new Curso(5, "Gestão de TI ", 5);
+for (int i=0; i <tab_curso.length; i++) {
+tab_curso[i].Imprime_Curso();
+}
+Professor[] tab_prof = new Professor[4];
+tab_prof[0] = new Professor(10,"Paulo","pg@uol.com.br", "4330-4578");
+tab_prof[1] = new Professor(15,"Alfredo","am@uol.com.br", "5578-9812");
+tab_prof[2] = new Professor(20,"Marcos","ms@uol.com.br", "4125-9976");
+tab_prof[3] = new Professor(25,"Ana","an@bol.com.br", "5678-1145");
+for (int i=0; i <tab_prof.length; i++) {
+tab_prof[i].Imprime_Professor();
+}
+Disciplina[] tab_disciplina = new Disciplina[4];
+tab_disciplina[0] = new Disciplina(100, "Estatística");
+tab_disciplina[1] = new Disciplina(110, "Algoritmos");
+tab_disciplina[2] = new Disciplina(120, "Redes");
+tab_disciplina[3] = new Disciplina(130, "Álgebra");
+for (int i=0; i <tab_disciplina.length; i++) {
+tab_disciplina[i].Imprime_Disciplina();
+}
+}
+}
