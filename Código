@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    //entrada
+    int a;
+    printf("Quantos anos você tem?");
+    //processamento
+    scanf("%d", &a);
+    //saída
+    printf("seu total de dias é:%d", a * 365);
+    
+    
+
+    return 0;
+}
