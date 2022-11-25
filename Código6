@@ -1,0 +1,21 @@
+package uscs;
+public class Teste_Aluno {
+public static void main(String[] args) {
+Aluno X1 = new Aluno("Paulo", 55123, "800912345-12", 'M',
+
+7.0, 6.0, 8.0);
+
+Aluno X2 = new Aluno("Ana", 991239, "500876123-15", 'F',
+
+2.0, 6.0, 9.0);
+
+System.out.println( "\n\n-------------------------") ;
+X1.imprime_Aluno();
+X1.imprime_Media();
+X1.imprime_Sexo();
+System.out.println( "\n\n-------------------------") ;
+X2.imprime_Aluno();
+X2.imprime_Media();
+X2.imprime_Sexo();
+}
+}
