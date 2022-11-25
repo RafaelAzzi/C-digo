@@ -1,0 +1,20 @@
+package uscs;
+public class Disciplina {
+int cod_disciplina;
+String desc_disciplina;
+public Disciplina() {
+cod_disciplina = 0;
+desc_disciplina = null;
+}
+
+public Disciplina(int c , String d) {
+cod_disciplina = c;
+desc_disciplina = d;
+}
+public void Imprime_Disciplina() {
+System.out.println("----- Funcao Imprime_Disciplina -----");
+System.out.println("Codigo da disciplina: " + cod_disciplina);
+System.out.println("Descricao da disciplina: " + desc_disciplina);
+System.out.println("-------------------------------------\n");
+}
+}
