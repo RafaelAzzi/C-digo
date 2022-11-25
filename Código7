@@ -1,0 +1,75 @@
+package uscs;
+import java.util.Arrays;
+public class Aluno {
+public String nome;
+public int codmat;
+public String cpf;
+public char sexo;
+public double nota_P1;
+public double nota_P2;
+public double nota_P3;
+public Aluno(String nome, int codmat, String cpf, char sexo,
+double nota_P1,double nota_P2, double nota_P3) {
+this.nome = nome;
+this.codmat = codmat;
+this.cpf = cpf;
+this.sexo = sexo;
+this.nota_P1 = nota_P1;
+this.nota_P2 = nota_P2;
+this.nota_P3 = nota_P3;
+}
+public Aluno() {
+this.nome = null;
+this.codmat = 0;
+this.cpf = null;
+this.sexo = ' ';
+this.nota_P1 = 0.0F;
+this.nota_P2 = 0.0F;
+this.nota_P3 = 0.0F;
+}
+public void imprime_Aluno() {
+System.out.println (
+
+"Nome: " + this.nome + "\n" +
+"Código de matrícula: " + this.codmat + "\n" +
+"CPF: " + this.cpf + "\n" +
+"Sexo: " + this.sexo + "\n" +
+"Nota P1: " + this.nota_P1 + "\n" +
+"Nota P2: " + this.nota_P2 + "\n" +
+"Nota P3: " + this.nota_P3 + "\n"
+
+);
+}
+
+public void imprime_Sexo() {
+
+System.out.println("Nome: " + this.nome);
+if (this.sexo == 'M')
+System.out.println ("Masculino");
+else {
+
+if (this.sexo == 'F')
+System.out.println ("Feminino");
+else
+System.out.println ("Sexo inválido...");
+
+}
+}
+public double Media_Aluno() {
+double[] tab_notas = new double[3];
+tab_notas[0] = this.nota_P1;
+tab_notas[1] = this.nota_P2;
+tab_notas[2] = this.nota_P3;
+Arrays.sort(tab_notas);
+return (tab_notas[1] + tab_notas[2] ) /2;
+}
+public void imprime_Media() {
+System.out.println ( "Média : " + this.Media_Aluno());
+}
+
+public String Resultado() {
+if (this.Media_Aluno() >= 6.0F)
+return ("Aprovado...");
+else return ("Reprovado...");
+}
+}
