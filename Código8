@@ -1,0 +1,23 @@
+package uscs;
+public class Curso {
+int cod_curso;
+String desc_curso;
+int duracao_semestre;
+public Curso() {
+cod_curso = 0;
+desc_curso = null;
+duracao_semestre = 0;
+}
+public Curso(int c, String d, int du){
+cod_curso = c;
+desc_curso = d;
+duracao_semestre = du;
+}
+public void Imprime_Curso() {
+System.out.println("----- Funcao Imprime_Curso() -----") ;
+System.out.println("Codigo do curso: " + cod_curso);
+System.out.println("Descricao do curso: " + desc_curso);
+System.out.println("Duracao do curso em semestres: " + duracao_semestre);
+System.out.println("-----------------------------------\n");
+}
+}
